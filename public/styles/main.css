@@ -95,6 +95,7 @@ input[type="submit"]:hover{
     animation-name: animacion;
     animation-duration: 5s;
     animation: ease normal;
+    padding: 10px;
 }
 .lista__carros ul {
     width: 100%;
