@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: 0;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul{
+    list-style: none;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+section {
+    width: 50%;
+    height: 100vh;
+}
+
+#section__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 80%;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.form__group {
+    width: 100%;
+    height: 2rem;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 1.2rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 100%;
+}
+
+input[type="submit"] {
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: 2rem;
+    width: 100px;
+    border-radius: 5px;
+    transition: all .3s ease
+}
+
+input[type="submit"]:hover{
+    background: rgb(4, 0, 74);
+    background: linear-gradient(0deg, rgba(4, 0, 74, 0) 0%, rgba(0, 0, 255, 0) 0%, rgba(0, 212, 255, 0.7447712361311712) 100%);
+    outline: 2px solid rgb(0, 55, 255);
+}
+@keyframes animacion {
+    0%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 1;
+    }
+}
+#section__view{
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.lista__carros{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 3/1;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid cyan;
+    border-radius: 5px;
+    margin-top: 20px;
+    animation-name: animacion;
+    animation-duration: 5s;
+    animation: ease normal;
+}
+.lista__carros ul {
+    width: 100%;
+    height: 100%;
+}
